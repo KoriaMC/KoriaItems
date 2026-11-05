@@ -1,0 +1,220 @@
+{
+  "armures": {
+    "traqueur": {
+      "rayon": 500,
+      "recherche-minutes": 10
+    }
+  },
+  "enchantements": {
+    "cout-niveaux": 50,
+    "cout-objets": ["LITHIUM:16"],
+    "minerais-modes": ["JADE_ORE", "AMETHYSTE_ORE", "APATITE_ORE", "KORIUM_ORE", "LITHIUM_ORE", "RANDOM_ORE"],
+    "tresor-chance": 2,
+    "tresors": ["DIAMOND:3", "EMERALD:2", "KORIUM_NUGGET:1", "GOLDEN_APPLE:1:1", "RANDOM_ORE:4"],
+    "marqueur-secondes": 15,
+    "cuir-koala-chance": 2,
+    "cuir-koala-objet": "LEATHER"
+  },
+  "machines": {
+    "recharge": {
+      "charge-par-lithium": 25
+    },
+    "table-chimie": {
+      "titre": "&8Table de chimie",
+      "recettes": ["bleu", "rouge", "jaune", "vert"],
+      "multiplicateur-duree": 1,
+      "multiplicateur-quantite": 1,
+      "batterie-par-fabrication": 0,
+      "bonus-pharmacien": false
+    },
+    "machine-medicale": {
+      "titre": "&8Machine médicale",
+      "recettes": [],
+      "multiplicateur-duree": 0.5,
+      "multiplicateur-quantite": 2,
+      "batterie-par-fabrication": 10,
+      "bonus-pharmacien": true
+    }
+  },
+  "medicaments": {
+    "bleu": {
+      "nom": "&9Médicament bleu",
+      "ingredients": ["SUGAR:2", "INK_SACK:4:1"],
+      "resultat": "MEDICAMENT_BLEU:4",
+      "secondes": 30
+    },
+    "rouge": {
+      "nom": "&cMédicament rouge",
+      "ingredients": ["SUGAR:2", "REDSTONE:2"],
+      "resultat": "MEDICAMENT_ROUGE:4",
+      "secondes": 30
+    },
+    "jaune": {
+      "nom": "&eMédicament jaune",
+      "ingredients": ["SUGAR:2", "GLOWSTONE_DUST:1", "WHEAT:1"],
+      "resultat": "MEDICAMENT_JAUNE:4",
+      "secondes": 45
+    },
+    "vert": {
+      "nom": "&aMédicament vert",
+      "ingredients": ["SUGAR:2", "AVOCAT:2"],
+      "resultat": "MEDICAMENT_VERT:4",
+      "secondes": 45
+    },
+    "orange": {
+      "nom": "&6Médicament orange",
+      "ingredients": ["SUGAR:2", "CARROT_ITEM:1", "BLAZE_POWDER:1"],
+      "resultat": "MEDICAMENT_ORANGE:4",
+      "secondes": 60
+    },
+    "marron": {
+      "nom": "&6Médicament marron",
+      "ingredients": ["SUGAR:2", "INK_SACK:3:2", "ROTTEN_FLESH:1"],
+      "resultat": "MEDICAMENT_MARRON:4",
+      "secondes": 60
+    },
+    "rose": {
+      "nom": "&dMédicament rose",
+      "ingredients": ["SUGAR:2", "GHAST_TEAR:1", "RADIS:1"],
+      "resultat": "MEDICAMENT_ROSE:4",
+      "secondes": 90
+    },
+    "gris": {
+      "nom": "&7Médicament gris",
+      "ingredients": ["SUGAR:2", "SULPHUR:2", "IRON_INGOT:1"],
+      "resultat": "MEDICAMENT_GRIS:4",
+      "secondes": 90
+    },
+    "violet": {
+      "nom": "&5Médicament violet",
+      "ingredients": ["SUGAR:2", "AMETHYSTE:1", "SPIDER_EYE:1"],
+      "resultat": "MEDICAMENT_VIOLET:4",
+      "secondes": 90
+    },
+    "noir": {
+      "nom": "&8Médicament noir",
+      "ingredients": ["SUGAR:3", "INK_SACK:0:2", "LITHIUM:1"],
+      "resultat": "MEDICAMENT_NOIR:4",
+      "secondes": 120
+    },
+    "blanc": {
+      "nom": "&fMédicament blanc",
+      "ingredients": ["SUGAR:3", "BONE:2", "QUARTZ:1", "LITHIUM:1"],
+      "resultat": "MEDICAMENT_BLANC:4",
+      "secondes": 120
+    }
+  },
+  "craft-avance": {
+    "machine_medicale": {
+      "motif": ["IIIII", "IGBGI", "IKLKI", "IGBGI", "IIIII"],
+      "cles": {
+        "I": "IRON_BLOCK",
+        "G": "GLASS",
+        "B": "BATTERY_CELL",
+        "K": "KORIUM_INGOT",
+        "L": "LITHIUM:8"
+      },
+      "resultat": "MEDICAL_MACHINE:1",
+      "deblocage": "machine_medicale"
+    },
+    "table_chimie": {
+      "motif": ["     ", " GGG ", " SBS ", " WWW ", "     "],
+      "cles": {
+        "G": "GLASS_BOTTLE",
+        "S": "SUGAR",
+        "B": "BREWING_STAND_ITEM",
+        "W": "WOOD"
+      },
+      "resultat": "TABLE_CHIMIE:1"
+    },
+    "centre_recharge": {
+      "motif": ["IIIII", "ILRLI", "IRBRI", "ILRLI", "IIIII"],
+      "cles": {
+        "I": "IRON_INGOT",
+        "L": "LITHIUM",
+        "R": "REDSTONE_BLOCK",
+        "B": "BATTERY_CELL"
+      },
+      "resultat": "CENTRE_RECHARGE:1"
+    },
+    "batterie": {
+      "motif": ["     ", " III ", " LRL ", " III ", "     "],
+      "cles": {
+        "I": "IRON_INGOT",
+        "L": "LITHIUM:2",
+        "R": "REDSTONE"
+      },
+      "resultat": "BATTERY_CELL:1"
+    },
+    "table_enchant_avancee": {
+      "motif": ["OBBBO", "BDLDB", "BLELB", "BDLDB", "OBBBO"],
+      "cles": {
+        "O": "OBSIDIAN",
+        "B": "BOOKSHELF",
+        "D": "DIAMOND_BLOCK",
+        "L": "LITHIUM:8",
+        "E": "ENCHANTMENT_TABLE"
+      },
+      "resultat": "TABLE_ENCHANT_AVANCEE:1"
+    },
+    "machine_renforcement": {
+      "motif": ["KOOOK", "OANAO", "OLBLO", "OANAO", "KOOOK"],
+      "cles": {
+        "K": "KORIUM_BLOCK",
+        "O": "OBSIDIENNE_RENFORCEE",
+        "A": "ANVIL",
+        "N": "NETHER_STAR",
+        "L": "LITHIUM:16",
+        "B": "BATTERY_CELL"
+      },
+      "resultat": "ARMOR_MACHINE:1"
+    },
+    "obsidienne_renforcee": {
+      "motif": ["     ", " OOO ", " OIO ", " OOO ", "     "],
+      "cles": {
+        "O": "OBSIDIAN",
+        "I": "IRON_BLOCK"
+      },
+      "resultat": "OBSIDIENNE_RENFORCEE:4"
+    }
+  },
+  "renforcements": {
+    "durabilite": {
+      "nom": "&bRenforcement de durabilité",
+      "type": "DURABILITE",
+      "max": 5,
+      "objets": [],
+      "icone": "OBSIDIAN",
+      "description": ["&7+1 niveau de Solidité,", "&7jusqu'à Solidité V."],
+      "cout": ["KORIUM_INGOT:4", "LITHIUM:16"]
+    },
+    "marteau": {
+      "nom": "&6Marteau 5 × 3",
+      "type": "ZONE",
+      "objets": ["LEGENDARY_HAMMER"],
+      "icone": "LEGENDARY_HAMMER",
+      "description": ["&7Le marteau légendaire mine", "&7en 5 × 3 au lieu de 3 × 3."],
+      "cout": ["KORIUM_BLOCK:2", "NETHER_STAR:1", "LITHIUM:32"]
+    },
+    "telekinesie": {
+      "nom": "&dTélékinésie légendaire",
+      "type": "ENCHANTEMENT",
+      "enchantement": "telekinesie",
+      "niveau": 1,
+      "objets": ["*_PICKAXE", "*_MULTITOOL", "LEGENDARY_HAMMER"],
+      "icone": "ENDER_PEARL",
+      "description": ["&7Les blocs minés vont", "&7directement dans l'inventaire."],
+      "cout": ["KORIUM_INGOT:8", "LITHIUM:32"]
+    },
+    "fortune": {
+      "nom": "&aFortune minerais III",
+      "type": "ENCHANTEMENT",
+      "enchantement": "fortune_minerais",
+      "niveau": 3,
+      "objets": ["*_PICKAXE", "*_MULTITOOL", "LEGENDARY_HAMMER"],
+      "icone": "EMERALD",
+      "description": ["&760 % de chance de doubler", "&7les minerais modés."],
+      "cout": ["KORIUM_BLOCK:1", "NETHER_STAR:1"]
+    }
+  }
+}

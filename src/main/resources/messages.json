@@ -1,0 +1,67 @@
+{
+  "prefix": "&8[&bKoria&8] ",
+  "traqueur": {
+    "resultat": [
+      "{prefix}&7Recherche du traqueur (&f{rayon} &7blocs) :",
+      "&8» &f{joueurs} &7joueur(s) ennemi(s), &f{claims} &7claim(s) : &f{factions}"
+    ]
+  },
+  "marqueur": {
+    "marque": "{prefix}&cVous êtes marqué pendant {secondes} secondes !",
+    "suivi": "[actionbar]&c&lMarqué &8» &f{joueur} &7en &f{x} {y} {z} &8(&f{distance} &7blocs&8)"
+  },
+  "tresor": {
+    "trouve": "{prefix}&6Vous avez trouvé un trésor !"
+  },
+  "passe-partout": {
+    "utilise": "{prefix}&7Porte ouverte. Passe partout : &f{restant} &7utilisation(s) restante(s).",
+    "use": "{prefix}&cVotre passe partout est usé."
+  },
+  "table-enchant": {
+    "titre": "&8Table d'enchantement avancée",
+    "incompatible": "{prefix}&cTenez un objet compatible en main.",
+    "max": "{prefix}&cCet enchantement est déjà au maximum.",
+    "niveaux": "{prefix}&cIl faut &f{niveaux} &cniveaux d'expérience.",
+    "objets": "{prefix}&cIl vous manque : &f{objets}",
+    "ok": "{prefix}&aEnchantement appliqué : &d{enchantement}"
+  },
+  "recharge": {
+    "titre": "&8Centre de recharge",
+    "pas-de-batterie": "{prefix}&cPlacez une batterie à gauche.",
+    "pas-de-lithium": "{prefix}&cPlacez du lithium au milieu.",
+    "pleine": "{prefix}&7La batterie est déjà pleine.",
+    "ok": "{prefix}&aBatterie rechargée à &f{charge} % &a({lithium} lithium utilisé(s))."
+  },
+  "pharmacie": {
+    "bloque": "{prefix}&cCe médicament n'est pas encore débloqué (métier Pharmacien).",
+    "ingredients": "{prefix}&cIl vous manque : &f{objets}",
+    "batterie": "{prefix}&cIl faut une batterie chargée à au moins &f{charge} %&c.",
+    "lance": "{prefix}&aFabrication lancée : {medicament} &a({secondes} s). Revenez à la machine pour la récupérer.",
+    "recupere": "{prefix}&aVous récupérez &f{quantite} &a{medicament}&a."
+  },
+  "craft": {
+    "titre": "&8Table de craft avancée",
+    "bloque": "{prefix}&cCette recette n'est pas encore débloquée.",
+    "ok": "{prefix}&aObjet fabriqué : &f{objet}"
+  },
+  "renforcement": {
+    "titre": "&8Machine de renforcement",
+    "faction": "{prefix}&cLa machine de renforcement demande l'amélioration de faction correspondante (/f upgrades).",
+    "incompatible": "{prefix}&cObjet en main incompatible ou déjà renforcé.",
+    "objets": "{prefix}&cIl vous manque : &f{objets}",
+    "ok": "{prefix}&aRenforcement appliqué : {renforcement}"
+  },
+  "alambic": {
+    "info": "{prefix}&7L'alambic amélioré n'est pas encore décrit dans le cahier des charges."
+  },
+  "commande": {
+    "permission": "{prefix}&cVous n'avez pas la permission.",
+    "recharge": "{prefix}&aConfiguration rechargée.",
+    "aide": [
+      "&b/koriaitems reload",
+      "&b/koriaitems enchant <id> [niveau] &7: enchantement custom sur l'objet en main",
+      "&b/koriaitems charge <0-100> &7: charge de la batterie en main",
+      "&b/koriaitems traqueur &7: recherche du traqueur"
+    ]
+  }
+}

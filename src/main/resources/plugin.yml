@@ -1,0 +1,17 @@
+name: KoriaItems
+version: ${project.version}
+main: fr.koriamc.items.KoriaItems
+author: KoriaMC
+description: ${project.description}
+softdepend: [KoriaFactions, KoriaJobs]
+
+commands:
+  koriaitems:
+    description: Administration de KoriaItems
+    aliases: [kitems]
+    usage: /koriaitems [reload|enchant|charge|traqueur]
+
+permissions:
+  koriaitems.admin:
+    description: Commandes d'administration
+    default: op
