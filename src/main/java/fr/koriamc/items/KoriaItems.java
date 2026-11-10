@@ -40,6 +40,7 @@ public final class KoriaItems extends JavaPlugin {
     private CraftTable craft;
     private Reinforcement reinforcement;
     private fr.koriamc.items.machine.Crates crates;
+    private fr.koriamc.items.ore.MiningOres miningOres;
 
     public static KoriaItems get() {
         return instance;
@@ -50,7 +51,7 @@ public final class KoriaItems extends JavaPlugin {
         instance = this;
         configFile = new JsonFile(this, "config.json", "medicaments", "medicaments.*", "craft-avance", "craft-avance.*",
                 "craft-avance.*.cles", "renforcements", "renforcements.*", "caisses", "caisses.*", "caisses.*.recompenses",
-                "caisses.*.recompenses.*");
+                "caisses.*.recompenses.*", "minerais-au-minage.minerais", "minerais-au-minage.minerais.*");
         messagesFile = new JsonFile(this, "messages.json");
         reload();
 
@@ -62,6 +63,9 @@ public final class KoriaItems extends JavaPlugin {
         craft = new CraftTable(this);
         reinforcement = new Reinforcement(this);
         crates = new fr.koriamc.items.machine.Crates(this);
+        miningOres = new fr.koriamc.items.ore.MiningOres(this);
+        miningOres.load(config.getConfigurationSection("minerais-au-minage"));
+        Bukkit.getPluginManager().registerEvents(miningOres, this);
         if (getCommand("cle") != null) {
             getCommand("cle").setExecutor(crates);
             getCommand("cle").setTabCompleter(crates);
@@ -99,6 +103,9 @@ public final class KoriaItems extends JavaPlugin {
         }
         config = configFile.toConfiguration();
         messages.load(messagesFile.toConfiguration());
+        if (miningOres != null) {
+            miningOres.load(config.getConfigurationSection("minerais-au-minage"));
+        }
     }
 
     /** /koriaitems reload | enchant &lt;id&gt; [niveau] | charge &lt;0-100&gt; | traqueur */
