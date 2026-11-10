@@ -66,6 +66,11 @@ public final class KoriaItems extends JavaPlugin {
         miningOres = new fr.koriamc.items.ore.MiningOres(this);
         miningOres.load(config.getConfigurationSection("minerais-au-minage"));
         Bukkit.getPluginManager().registerEvents(miningOres, this);
+        if (getCommand("vision") != null) {
+            fr.koriamc.items.vision.NightVision vision = new fr.koriamc.items.vision.NightVision(this);
+            getCommand("vision").setExecutor(vision);
+            Bukkit.getPluginManager().registerEvents(vision, this);
+        }
         if (getCommand("cle") != null) {
             getCommand("cle").setExecutor(crates);
             getCommand("cle").setTabCompleter(crates);

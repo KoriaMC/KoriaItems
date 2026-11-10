@@ -359,11 +359,6 @@
     "remplace": ["STONE"],
     "blocs-naturels": ["STONE", "DIRT", "GRAVEL", "COAL_ORE", "IRON_ORE", "GOLD_ORE", "REDSTONE_ORE", "GLOWING_REDSTONE_ORE", "LAPIS_ORE", "DIAMOND_ORE", "EMERALD_ORE", "JADE_ORE", "AMETHYSTE_ORE", "APATITE_ORE", "KORIUM_ORE", "LITHIUM_ORE", "RANDOM_ORE"],
     "minerais": {
-      "KORIUM_ORE": {
-        "chance": 0.005,
-        "filon": [1, 2],
-        "hauteur": [5, 12]
-      },
       "RANDOM_ORE": {
         "chance": 0.006,
         "filon": [1, 2],

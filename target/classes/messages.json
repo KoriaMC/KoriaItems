@@ -80,5 +80,10 @@
     "aide": "&eClic droit sur une caisse avec la clé",
     "usage": "{prefix}&c/cle give <joueur> <type> [nombre] &7(types : {types})",
     "donnee": "{prefix}&aDonné : &f{nombre} &aclé(s) de {caisse} &aà &f{joueur}&a."
+  },
+  "vision": {
+    "activee": "{prefix}&aVision nocturne activée.",
+    "desactivee": "{prefix}&cVision nocturne désactivée.",
+    "joueur": "{prefix}&cCommande réservée aux joueurs."
   }
 }

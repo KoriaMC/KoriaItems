@@ -14,6 +14,7 @@ fr\koriamc\items\machine\RechargeCenter.class
 fr\koriamc\items\util\MaterialSet.class
 fr\koriamc\items\enchant\Enchants.class
 fr\koriamc\items\util\Text.class
+fr\koriamc\items\vision\NightVision.class
 fr\koriamc\items\util\Nbt.class
 fr\koriamc\items\enchant\Enchants$1.class
 fr\koriamc\items\config\Messages.class
@@ -22,6 +23,7 @@ fr\koriamc\items\machine\CraftTable$1.class
 fr\koriamc\items\machine\Reinforcement.class
 fr\koriamc\items\machine\RechargeCenter$1.class
 fr\koriamc\items\KoriaItems$1.class
+fr\koriamc\items\vision\NightVision$1.class
 fr\koriamc\items\machine\Reinforcement$1.class
 fr\koriamc\items\enchant\EnchantTable$1.class
 fr\koriamc\items\util\Items.class

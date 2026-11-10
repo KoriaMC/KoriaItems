@@ -14,8 +14,15 @@ commands:
     description: Clés des caisses (koala, tropique, spawners)
     aliases: [cles, key, keys]
     usage: /cle [give <joueur> <type> [nombre]]
+  vision:
+    description: Active ou désactive la vision nocturne
+    aliases: [nv, nightvision]
+    usage: /vision
 
 permissions:
   koriaitems.admin:
     description: Commandes d'administration
     default: op
+  koriaitems.vision:
+    description: Utiliser /vision
+    default: true
