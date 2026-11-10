@@ -63,5 +63,22 @@
       "&b/koriaitems charge <0-100> &7: charge de la batterie en main",
       "&b/koriaitems traqueur &7: recherche du traqueur"
     ]
+  },
+  "caisse": {
+    "titre": "&8Caisses",
+    "lore-cle": [
+      "&7Ouvre une {caisse}&7.",
+      "&8Clic droit sur une caisse."
+    ],
+    "gain": [
+      "[title]&6&lCAISSE OUVERTE;;{recompense}",
+      "{prefix}&7Vous avez ouvert une {caisse} &7: {recompense}&7 !"
+    ],
+    "annonce": "{prefix}&f{joueur} &7a obtenu {recompense} &7dans une {caisse}&7 !",
+    "vide": "{prefix}&cCette caisse n'a aucune récompense configurée.",
+    "ligne": "&8» {recompense} &8({chance} %)",
+    "aide": "&eClic droit sur une caisse avec la clé",
+    "usage": "{prefix}&c/cle give <joueur> <type> [nombre] &7(types : {types})",
+    "donnee": "{prefix}&aDonné : &f{nombre} &aclé(s) de {caisse} &aà &f{joueur}&a."
   }
 }

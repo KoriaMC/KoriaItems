@@ -2,7 +2,7 @@ name: KoriaItems
 version: 1.0.0
 main: fr.koriamc.items.KoriaItems
 author: KoriaMC
-description: Équipements et machines KoriaMC : sets d armure, enchantements custom, machines (Spigot 1.8.8)
+description: "Équipements et machines KoriaMC : sets d armure, enchantements custom, machines (Spigot 1.8.8)"
 softdepend: [KoriaFactions, KoriaJobs]
 
 commands:
@@ -10,6 +10,10 @@ commands:
     description: Administration de KoriaItems
     aliases: [kitems]
     usage: /koriaitems [reload|enchant|charge|traqueur]
+  cle:
+    description: Clés des caisses (koala, tropique, spawners)
+    aliases: [cles, key, keys]
+    usage: /cle [give <joueur> <type> [nombre]]
 
 permissions:
   koriaitems.admin:

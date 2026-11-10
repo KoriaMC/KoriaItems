@@ -71,6 +71,8 @@ public final class MachineListener implements Listener {
             plugin.enchantTable().open(player);
         } else if (type.equals("ARMOR_MACHINE")) {
             plugin.reinforcement().open(player, machine.getLocation());
+        } else if (type.equals("CAISSE")) {
+            plugin.crates().use(player);
         } else if (type.equals("ALAMBIC")) {
             plugin.msg().send(player, "alambic.info");
         }
@@ -88,7 +90,8 @@ public final class MachineListener implements Listener {
             for (int dy = -3; dy <= 0; dy++) {
                 for (int dz = -2; dz <= 2; dz++) {
                     Block b = block.getRelative(dx, dy, dz);
-                    if (b.getType().name().equals("MEDICAL_MACHINE") || b.getType().name().equals("ARMOR_MACHINE")) {
+                    String n = b.getType().name();
+                    if (n.equals("MEDICAL_MACHINE") || n.equals("ARMOR_MACHINE") || n.equals("TABLE_CHIMIE")) {
                         return b;
                     }
                 }
@@ -101,7 +104,7 @@ public final class MachineListener implements Listener {
         String n = m.name();
         return n.equals("CENTRE_RECHARGE") || n.equals("TABLE_CHIMIE") || n.equals("MEDICAL_MACHINE")
                 || n.equals("TABLE_CRAFT_AVANCEE") || n.equals("TABLE_ENCHANT_AVANCEE") || n.equals("ARMOR_MACHINE")
-                || n.equals("ALAMBIC");
+                || n.equals("ALAMBIC") || n.equals("CAISSE");
     }
 
     // ===================================================== Marteau légendaire

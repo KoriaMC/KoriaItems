@@ -216,5 +216,140 @@
       "description": ["&760 % de chance de doubler", "&7les minerais modés."],
       "cout": ["KORIUM_BLOCK:1", "NETHER_STAR:1"]
     }
+  },
+  "caisses-son": "LEVEL_UP:1:1.4",
+  "caisses": {
+    "koala": {
+      "id": 1,
+      "nom": "&aCaisse Koala",
+      "nom-cle": "&aClé Koala",
+      "recompenses": {
+        "eucalyptus": {
+          "nom": "&a16 feuilles d'eucalyptus",
+          "poids": 30,
+          "objets": ["EUCALYPTUS_LEAF:16"]
+        },
+        "cuir": {
+          "nom": "&68 cuirs",
+          "poids": 20,
+          "objets": ["LEATHER:8"]
+        },
+        "argent": {
+          "nom": "&e2 500 $",
+          "poids": 20,
+          "commandes": [
+            "eco give {joueur} 2500"
+          ]
+        },
+        "korium": {
+          "nom": "&c2 pépites de korium",
+          "poids": 15,
+          "objets": ["KORIUM_NUGGET:2"]
+        },
+        "spawner": {
+          "nom": "&dSpawner à vache",
+          "poids": 10,
+          "commandes": [
+            "spawners give {joueur} COW 1"
+          ]
+        },
+        "pomme": {
+          "nom": "&6Pomme cheat",
+          "poids": 5,
+          "objets": ["GOLDEN_APPLE:1:1"],
+          "annonce": true
+        }
+      }
+    },
+    "tropique": {
+      "id": 2,
+      "nom": "&6Caisse Tropique",
+      "nom-cle": "&6Clé Tropique",
+      "recompenses": {
+        "avocat": {
+          "nom": "&22 avocats royaux",
+          "poids": 25,
+          "objets": ["AVOCAT_ROYAL:2"]
+        },
+        "randomore": {
+          "nom": "&d8 Random Ores",
+          "poids": 25,
+          "objets": ["RANDOM_ORE:8"]
+        },
+        "petales": {
+          "nom": "&d4 pétales tropicaux",
+          "poids": 20,
+          "objets": ["PETALE_TROPICAL:4"]
+        },
+        "apatite": {
+          "nom": "&94 apatites",
+          "poids": 15,
+          "objets": ["APATITE:4"]
+        },
+        "fragment": {
+          "nom": "&c1 fragment de korium",
+          "poids": 10,
+          "objets": ["KORIUM_FRAGMENT:1"],
+          "annonce": true
+        },
+        "lingot": {
+          "nom": "&c&l1 lingot de korium",
+          "poids": 5,
+          "objets": ["KORIUM_INGOT:1"],
+          "annonce": true
+        }
+      }
+    },
+    "spawners": {
+      "id": 3,
+      "nom": "&dCaisse Spawners",
+      "nom-cle": "&dClé Spawners",
+      "recompenses": {
+        "cochon": {
+          "nom": "&dSpawner à cochon",
+          "poids": 25,
+          "commandes": [
+            "spawners give {joueur} PIG 1"
+          ]
+        },
+        "vache": {
+          "nom": "&dSpawner à vache",
+          "poids": 25,
+          "commandes": [
+            "spawners give {joueur} COW 1"
+          ]
+        },
+        "zombie": {
+          "nom": "&dSpawner à zombie",
+          "poids": 20,
+          "commandes": [
+            "spawners give {joueur} ZOMBIE 1"
+          ]
+        },
+        "squelette": {
+          "nom": "&dSpawner à squelette",
+          "poids": 15,
+          "commandes": [
+            "spawners give {joueur} SKELETON 1"
+          ]
+        },
+        "blaze": {
+          "nom": "&6Spawner à Blaze",
+          "poids": 10,
+          "commandes": [
+            "spawners give {joueur} BLAZE 1"
+          ],
+          "annonce": true
+        },
+        "golem": {
+          "nom": "&f&lSpawner à golem",
+          "poids": 5,
+          "commandes": [
+            "spawners give {joueur} IRON_GOLEM 1"
+          ],
+          "annonce": true
+        }
+      }
+    }
   }
 }

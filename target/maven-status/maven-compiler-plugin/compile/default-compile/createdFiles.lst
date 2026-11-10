@@ -1,5 +1,6 @@
 fr\koriamc\items\machine\Reinforcement.class
 fr\koriamc\items\machine\RechargeCenter$1.class
+fr\koriamc\items\machine\Crates$1.class
 fr\koriamc\items\util\Nms.class
 fr\koriamc\items\KoriaItems$1.class
 fr\koriamc\items\armor\ArmorEffects.class
@@ -27,6 +28,7 @@ fr\koriamc\items\enchant\EnchantEffects.class
 fr\koriamc\items\machine\RechargeCenter.class
 fr\koriamc\items\KoriaItems.class
 fr\koriamc\items\util\MaterialSet.class
+fr\koriamc\items\machine\Crates.class
 fr\koriamc\items\armor\ArmorEffects$Set_.class
 fr\koriamc\items\enchant\Enchants.class
 fr\koriamc\items\util\Text.class

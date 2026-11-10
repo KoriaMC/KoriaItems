@@ -39,6 +39,7 @@ public final class KoriaItems extends JavaPlugin {
     private Pharmacy pharmacy;
     private CraftTable craft;
     private Reinforcement reinforcement;
+    private fr.koriamc.items.machine.Crates crates;
 
     public static KoriaItems get() {
         return instance;
@@ -48,7 +49,8 @@ public final class KoriaItems extends JavaPlugin {
     public void onEnable() {
         instance = this;
         configFile = new JsonFile(this, "config.json", "medicaments", "medicaments.*", "craft-avance", "craft-avance.*",
-                "craft-avance.*.cles", "renforcements", "renforcements.*");
+                "craft-avance.*.cles", "renforcements", "renforcements.*", "caisses", "caisses.*", "caisses.*.recompenses",
+                "caisses.*.recompenses.*");
         messagesFile = new JsonFile(this, "messages.json");
         reload();
 
@@ -59,6 +61,11 @@ public final class KoriaItems extends JavaPlugin {
         pharmacy = new Pharmacy(this);
         craft = new CraftTable(this);
         reinforcement = new Reinforcement(this);
+        crates = new fr.koriamc.items.machine.Crates(this);
+        if (getCommand("cle") != null) {
+            getCommand("cle").setExecutor(crates);
+            getCommand("cle").setTabCompleter(crates);
+        }
 
         Bukkit.getPluginManager().registerEvents(armor, this);
         Bukkit.getPluginManager().registerEvents(enchantEffects, this);
@@ -158,5 +165,9 @@ public final class KoriaItems extends JavaPlugin {
 
     public Reinforcement reinforcement() {
         return reinforcement;
+    }
+
+    public fr.koriamc.items.machine.Crates crates() {
+        return crates;
     }
 }

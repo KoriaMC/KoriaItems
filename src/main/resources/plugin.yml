@@ -2,7 +2,7 @@ name: KoriaItems
 version: ${project.version}
 main: fr.koriamc.items.KoriaItems
 author: KoriaMC
-description: ${project.description}
+description: "${project.description}"
 softdepend: [KoriaFactions, KoriaJobs]
 
 commands:
@@ -10,6 +10,10 @@ commands:
     description: Administration de KoriaItems
     aliases: [kitems]
     usage: /koriaitems [reload|enchant|charge|traqueur]
+  cle:
+    description: Clés des caisses (koala, tropique, spawners)
+    aliases: [cles, key, keys]
+    usage: /cle [give <joueur> <type> [nombre]]
 
 permissions:
   koriaitems.admin:
